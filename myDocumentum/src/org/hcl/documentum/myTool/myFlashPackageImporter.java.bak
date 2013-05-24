@@ -1,0 +1,76 @@
+package org.hcl.documentum.myTool;
+
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.hssf.record.formula.functions.Files;
+import org.hcl.IO.myTool.Excel;
+import org.hcl.IO.myTool.myFileFunctions;
+
+import com.documentum.fc.client.IDfSession;
+import com.documentum.fc.common.DfLogger;
+import com.documentum.fc.common.IDfId;
+
+public class myFlashPackageImporter {
+
+	/**
+	 * @param args
+	 */
+	private static DctmClient client;
+	private static IDfSession sess;
+	private static String[] data;
+	private static IDfId id;
+	private static ArrayList errorlist;
+	
+	/*
+	public static boolean createFP(String filename,String location,File pack) throws IOException{
+		String[] temp=pack.getName().split("_");
+		filename=filename+temp[temp.length-1];
+		
+		File f3=new File(filename);
+		myFileFunctions.copyFile(pack, f3);
+		return true;
+	}
+	*/
+		
+	public static void main(String[] args) throws IOException {
+		
+		/*
+		// TODO Auto-generated method stub
+		String[] tmp = new String[1];
+		tmp[0] = "xls";
+		errorlist=new ArrayList();
+		DfLogger.info(
+				Excel.class,
+				"Please select MS Excel Sheet for input : "
+						+ "\nSheet should have\n"
+						+ "Object_name : DCTM path : pack location",
+				null, null);
+		String filename = myFileFunctions.getFile(tmp);
+		if (filename != null) {
+			DfLogger.info(Excel.class, "\nSelected filename : " + filename,
+					null, null);
+			data = Excel.readExcel(filename);
+			
+			*/
+			
+		
+		
+			System.out.println("Exists");
+			
+			File f=new File("source");
+			
+			FileUtils.copyDirectoryToDirectory(new File("src"),f);
+			
+			
+			
+		System.out.println("done");
+		
+	}
+	}
+
+

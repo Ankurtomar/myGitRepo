@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<context:component-scan base-package="org.anks2089.spring" />
+	<context:annotation-config />
+
+	<!-- jdbc connection -->
+	<import resource="database/Spring-jdbc-DataSource.xml" />
+
+	<!-- jdbc client layer -->
+	<import resource="jdbc-consumer/Spring-jdbc-Student.xml" />
+
+	<!-- scope="singleton" -->
+	<!-- scope="prototype" -->
+	<bean id="schoolAppJDBC" class="org.anks2089.spring.jdbc.component.MySchool">
+
+		<constructor-arg ref="studentJDBC" />
+		<constructor-arg ref="teacherJDBC" />
+		<property name="personJdbcTemplate" ref="personJdbcTemplate" />
+		<!-- <property name="person1" ref="teacher" /> -->
+		<!-- <property name="person2" ref="student" /> -->
+	</bean>
+
+	<bean id="teacherJDBC" class="org.anks2089.spring.jdbc.bean.Teacher" />
+	<bean id="studentJDBC" class="org.anks2089.spring.jdbc.bean.Student" />
+
+</beans>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_TOKbgHqDEeKzooMJXbaqrw" activeDiagram="_TORJMHqDEeKzooMJXbaqrw">
+  <model href="BroadingAccess.uml#_TNHSoHqDEeKzooMJXbaqrw"/>
+  <diagrams xmi:id="_TORJMHqDEeKzooMJXbaqrw" position="0,0" size="100,100" name="BroadingAccess" viewport="0,0">
+    <property xmi:id="_TbYYIHqDEeKzooMJXbaqrw" key="pageFormatName" value="A4"/>
+    <property xmi:id="_TbYYIXqDEeKzooMJXbaqrw" key="diagramWidth" value="840"/>
+    <property xmi:id="_TbYYInqDEeKzooMJXbaqrw" key="diagramHeight" value="1180"/>
+    <property xmi:id="_TbYYI3qDEeKzooMJXbaqrw" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_TbYYJHqDEeKzooMJXbaqrw" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_TbYYJXqDEeKzooMJXbaqrw" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_TbYYJnqDEeKzooMJXbaqrw" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_TbYYJ3qDEeKzooMJXbaqrw" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_TbYYKHqDEeKzooMJXbaqrw" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_TORJMXqDEeKzooMJXbaqrw" presentation="org.topcased.modeler.uml.sequencediagram">
+      <element href="BroadingAccess.uml#_TNHSo3qDEeKzooMJXbaqrw"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_TlldAHqDEeKzooMJXbaqrw" position="13,40" size="200,300">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_TlldAXqDEeKzooMJXbaqrw" presentation="default">
+        <element href="BroadingAccess.uml#_TNHSqnqDEeKzooMJXbaqrw"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_TmrpMHqDEeKzooMJXbaqrw" position="63,40" size="20,15">
+        <anchorage xmi:id="_Tm2BQHqDEeKzooMJXbaqrw" position="13,5" graphEdge="_TnhWsHqDEeKzooMJXbaqrw"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_TmrpMXqDEeKzooMJXbaqrw" presentation="default">
+          <element href="BroadingAccess.uml#_TNHSrHqDEeKzooMJXbaqrw"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_TmwhsHqDEeKzooMJXbaqrw" position="63,70" size="20,15">
+        <anchorage xmi:id="_Tnh9wHqDEeKzooMJXbaqrw" position="13,5" graphEdge="_Tnjy8HqDEeKzooMJXbaqrw"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_TmwhsXqDEeKzooMJXbaqrw" presentation="default">
+          <element href="BroadingAccess.uml#_TNHSsXqDEeKzooMJXbaqrw"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_Tmn-0HqDEeKzooMJXbaqrw" position="243,40" size="200,300">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Tmn-0XqDEeKzooMJXbaqrw" presentation="default">
+        <element href="BroadingAccess.uml#_TNHSq3qDEeKzooMJXbaqrw"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_Tmv6oHqDEeKzooMJXbaqrw" position="13,40" size="20,15">
+        <anchorage xmi:id="_TngIkHqDEeKzooMJXbaqrw" position="13,5" graphEdge="_TnhWsHqDEeKzooMJXbaqrw"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Tmv6oXqDEeKzooMJXbaqrw" presentation="default">
+          <element href="BroadingAccess.uml#_TNHSsHqDEeKzooMJXbaqrw"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_TmxIwHqDEeKzooMJXbaqrw" position="13,70" size="20,15">
+        <anchorage xmi:id="_Tnik0HqDEeKzooMJXbaqrw" position="13,5" graphEdge="_Tnjy8HqDEeKzooMJXbaqrw"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_TmxIwXqDEeKzooMJXbaqrw" presentation="default">
+          <element href="BroadingAccess.uml#_TNHStXqDEeKzooMJXbaqrw"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_TnhWsHqDEeKzooMJXbaqrw" anchor="_Tm2BQHqDEeKzooMJXbaqrw _TngIkHqDEeKzooMJXbaqrw">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_TnhWsXqDEeKzooMJXbaqrw" presentation="default">
+        <element href="BroadingAccess.uml#_TNHStnqDEeKzooMJXbaqrw"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_TnhWsnqDEeKzooMJXbaqrw" id="nameEdgeObject" offset="0,-10"/>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_Tnjy8HqDEeKzooMJXbaqrw" anchor="_Tnh9wHqDEeKzooMJXbaqrw _Tnik0HqDEeKzooMJXbaqrw">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Tnjy8XqDEeKzooMJXbaqrw" presentation="default">
+        <element href="BroadingAccess.uml#_TNHSt3qDEeKzooMJXbaqrw"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_Tnjy8nqDEeKzooMJXbaqrw" id="nameEdgeObject" offset="0,-10"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

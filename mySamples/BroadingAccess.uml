@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_TNHSoHqDEeKzooMJXbaqrw" name="mySamples">
+  <packagedElement xmi:type="uml:Package" xmi:id="_TNHSoXqDEeKzooMJXbaqrw" name="A">
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_TNHSonqDEeKzooMJXbaqrw">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_TNHSo3qDEeKzooMJXbaqrw">
+        <ownedAttribute xmi:id="_TNHSpHqDEeKzooMJXbaqrw" name="property" type="_TNHSuHqDEeKzooMJXbaqrw"/>
+        <ownedAttribute xmi:id="_TNHSpXqDEeKzooMJXbaqrw" name="property" type="_TNHSvXqDEeKzooMJXbaqrw"/>
+        <ownedConnector xmi:id="_TNHSpnqDEeKzooMJXbaqrw">
+          <end xmi:id="_TNHSp3qDEeKzooMJXbaqrw" role="_TNHSpHqDEeKzooMJXbaqrw" partWithPort="_TNHSpHqDEeKzooMJXbaqrw"/>
+        </ownedConnector>
+        <ownedConnector xmi:id="_TNHSqHqDEeKzooMJXbaqrw">
+          <end xmi:id="_TNHSqXqDEeKzooMJXbaqrw" role="_TNHSpXqDEeKzooMJXbaqrw" partWithPort="_TNHSpXqDEeKzooMJXbaqrw"/>
+        </ownedConnector>
+        <lifeline xmi:id="_TNHSqnqDEeKzooMJXbaqrw" name="self" represents="_TNHSpHqDEeKzooMJXbaqrw" coveredBy="_TNHSrHqDEeKzooMJXbaqrw _TNHSrXqDEeKzooMJXbaqrw _TNHSrnqDEeKzooMJXbaqrw _TNHSsXqDEeKzooMJXbaqrw _TNHSsnqDEeKzooMJXbaqrw _TNHSs3qDEeKzooMJXbaqrw"/>
+        <lifeline xmi:id="_TNHSq3qDEeKzooMJXbaqrw" name="out" represents="_TNHSpXqDEeKzooMJXbaqrw" coveredBy="_TNHSr3qDEeKzooMJXbaqrw _TNHSsHqDEeKzooMJXbaqrw _TNHStHqDEeKzooMJXbaqrw _TNHStXqDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_TNHSrHqDEeKzooMJXbaqrw" name="A( )" covered="_TNHSqnqDEeKzooMJXbaqrw" start="_TNHSrXqDEeKzooMJXbaqrw" finish="_TNHSrnqDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TNHSrXqDEeKzooMJXbaqrw" covered="_TNHSqnqDEeKzooMJXbaqrw" event="_TNHSuXqDEeKzooMJXbaqrw" message="_TNHStnqDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TNHSrnqDEeKzooMJXbaqrw" covered="_TNHSqnqDEeKzooMJXbaqrw" event="_TNHSuXqDEeKzooMJXbaqrw" message="_TNHStnqDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TNHSr3qDEeKzooMJXbaqrw" covered="_TNHSq3qDEeKzooMJXbaqrw" event="_TNHSuXqDEeKzooMJXbaqrw" message="_TNHStnqDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_TNHSsHqDEeKzooMJXbaqrw" covered="_TNHSq3qDEeKzooMJXbaqrw" start="_TNHSr3qDEeKzooMJXbaqrw" finish="_TNHSr3qDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_TNHSsXqDEeKzooMJXbaqrw" name="main( )" covered="_TNHSqnqDEeKzooMJXbaqrw" start="_TNHSsnqDEeKzooMJXbaqrw" finish="_TNHSs3qDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TNHSsnqDEeKzooMJXbaqrw" covered="_TNHSqnqDEeKzooMJXbaqrw" event="_TNHSunqDEeKzooMJXbaqrw" message="_TNHSt3qDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TNHSs3qDEeKzooMJXbaqrw" covered="_TNHSqnqDEeKzooMJXbaqrw" event="_TNHSunqDEeKzooMJXbaqrw" message="_TNHSt3qDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TNHStHqDEeKzooMJXbaqrw" covered="_TNHSq3qDEeKzooMJXbaqrw" event="_TNHSunqDEeKzooMJXbaqrw" message="_TNHSt3qDEeKzooMJXbaqrw"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_TNHStXqDEeKzooMJXbaqrw" covered="_TNHSq3qDEeKzooMJXbaqrw" start="_TNHStHqDEeKzooMJXbaqrw" finish="_TNHStHqDEeKzooMJXbaqrw"/>
+        <message xmi:id="_TNHStnqDEeKzooMJXbaqrw" name="println( )" messageSort="asynchCall" receiveEvent="_TNHSr3qDEeKzooMJXbaqrw" sendEvent="_TNHSrXqDEeKzooMJXbaqrw"/>
+        <message xmi:id="_TNHSt3qDEeKzooMJXbaqrw" name="println( )" messageSort="asynchCall" receiveEvent="_TNHStHqDEeKzooMJXbaqrw" sendEvent="_TNHSsnqDEeKzooMJXbaqrw"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TNHSuHqDEeKzooMJXbaqrw" name="BroadingAccess"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_TNHSuXqDEeKzooMJXbaqrw"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_TNHSunqDEeKzooMJXbaqrw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TNHSu3qDEeKzooMJXbaqrw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_TNHSvHqDEeKzooMJXbaqrw" name="io">
+      <packagedElement xmi:type="uml:Class" xmi:id="_TNHSvXqDEeKzooMJXbaqrw" name="PrintStream"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

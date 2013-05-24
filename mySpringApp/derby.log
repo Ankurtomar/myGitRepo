@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Thu Mar 28 10:59:39 IST 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013d-af79-10a0-0000007475a8 
+on database directory C:\Users\ankur_tomar\MyDB  with class loader sun.misc.Launcher$AppClassLoader@119c082 
+Loaded from file:/D:/Ankur/Local%20Repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_11-b21
+user.dir=D:\Ankur\Maven\mySpringApp
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

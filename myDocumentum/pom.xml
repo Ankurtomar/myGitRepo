@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>myDocumentum</artifactId>
+	<parent>
+		<groupId>org.anks2089</groupId>
+		<artifactId>myProject</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>emc.documentum.dfc</groupId>
+			<artifactId>dfc</artifactId>
+			<version>${dfc.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.anks2089</groupId>
+			<artifactId>myIO</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+	<groupId>org.anks2089</groupId>
+	<properties>
+		<dfc.version>6.7.0000.0222</dfc.version>
+	</properties>
+</project>
