@@ -1,0 +1,356 @@
+{
+    "assets": {
+        "_all": {
+            "enabled": true
+        },
+        "properties": {
+			"c_asset_id" : { 
+				"type": "multi_field",
+				"fields":{
+					"c_asset_id": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+					"untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+				}
+			},
+            "c_caption": {
+                "type": "multi_field",
+                "fields": {
+                    "c_caption": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                    "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                }
+            },
+            "c_legacy_asset_id": {
+                "type": "multi_field",
+                "fields": {
+                    "c_legacy_asset_id": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                    "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                }
+            },
+            "c_collection_id": {
+                "type": "multi_field",
+                "fields": {
+                    "c_collection_id": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                    "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                }
+            },
+            "c_description": {
+                "type": "multi_field",
+                "fields": {
+                    "c_description": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                    "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                }
+            },
+            "keywords": {
+                "type": "nested",
+                "properties": {
+                    "keywords": {
+                        "type": "multi_field",
+                        "fields": {
+                            "keywords": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                            "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                        }
+                    }
+                }
+            },
+            "c_viewpoint": {
+                "type": "nested",
+                "properties": {
+                    "c_viewpoint": {
+                        "type": "multi_field",
+                        "fields": {
+                            "c_viewpoint": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                            "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                        }
+                    }
+                }
+            },
+            "c_grouping": {
+                "type": "nested",
+                "properties": {
+                    "c_grouping": {
+                        "type": "multi_field",
+                        "fields": {
+                            "c_grouping": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                            "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                        }
+                    }
+                }
+            },
+            "c_time_and_place": {
+                "type": "nested",
+                "properties": {
+                    "c_time_and_place": {
+                        "type": "multi_field",
+                        "fields": {
+                            "c_time_and_place": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                            "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                        }
+                    }
+                }
+            },
+            "c_age_and_gender": {
+                "type": "nested",
+                "properties": {
+                    "c_age_and_gender": {
+                        "type": "multi_field",
+                        "fields": {
+                            "c_age_and_gender": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                            "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                        }
+                    }
+                }
+            },
+            "c_comp_and_tech": {
+                "type": "nested",
+                "properties": {
+                    "c_comp_and_tech": {
+                        "type": "multi_field",
+                        "fields": {
+                            "c_comp_and_tech": { "type": "string", "index": "analyzed", "include_in_all": true, "analyzer": "basic_english" },
+                            "untouched": { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" }
+                        }
+                    }
+                }
+            },
+
+			"c_content_partner": {
+                "type": "nested",
+                "properties": {
+                    "c_content_partner": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+
+			"c_content_partner_id": {
+                "type": "nested",
+                "properties": {
+                    "c_content_partner_id": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+			"c_illustrator_designer": {
+                "type": "nested",
+                "properties": {
+                    "c_illustrator_designer": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+			"c_model_maker": {
+                "type": "nested",
+                "properties": {
+                    "c_model_maker": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+			"c_model_talent_name": {
+                "type": "nested",
+                "properties": {
+                    "c_model_talent_name": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+			"c_model_talent_no": {
+                "type": "nested",
+                "properties": {
+                    "c_model_talent_no": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+			"c_photographer": {
+                "type": "nested",
+                "properties": {
+                    "c_photographer": {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"}                     
+                }
+            },
+			
+			"c_content_partner_comment" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "c_cataloguer" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "c_collection_title" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "asset_r_object_id" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "c_asset_class" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "c_permissions_template_id" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "c_rendition_path" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_restrictions_exist" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "r_content_size" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "a_content_type" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_original_file_name" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_permissions_template_name" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_record_creator" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_technical_notes" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"},
+
+            "object_name" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "acl_name" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_colour_mode" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_content_language" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_credit_line" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_exclusivity_statement" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_no_hi_res" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_location_rel_status" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_model_rel_status" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_prop_rel_status" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_rights_notes" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_second_source_id" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_shoot_location" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_source_name" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_restrictions_statement" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_purchasing_project" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_purchasing_department" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_purchasing_territory" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_purchasing_division" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_purchasing_business_unit" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "r_modifier" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+
+            "c_general_notes" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },           
+
+            "creation_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" },
+
+            "r_modify_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" },
+
+            "c_exclusivity_end_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" },
+
+            "c_ingest_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" },
+
+            "c_asset_creation_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" },
+
+            "c_orientation" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_orientation" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_orientation_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },      
+
+            "c_asset_type" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_asset_type" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_asset_type_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_adult_content_warning" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_adult_content_warning" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_adult_content_warning_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },                      
+
+            "c_master_image" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_master_image" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_master_image_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+
+
+            "c_asset_rights_class" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_asset_rights_class" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_asset_rights_class_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_asset_lifecycle_status" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_asset_lifecycle_status" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_asset_lifecycle_status_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_admin_business" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_admin_business" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_admin_business_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_internal_wf_status" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_internal_wf_status" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_internal_wf_status_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_contains_people" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_contains_people" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_contains_people_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_content_partner_wf_status" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_content_partner_wf_status" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_content_partner_wf_status_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_content_partner_img_type" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_content_partner_img_type" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_content_partner_img_type_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_predominant_hue" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_predominant_hue" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_predominant_hue_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_has_usage" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_has_usage" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_has_usage_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            },
+
+            "c_restrictions_text" : { 
+                    "type" : "multi_field",
+                    "fields" : {
+                        "c_restrictions_text" : {"type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+                        "c_restrictions_text_facet" : { "type" : "string", "include_in_all" : false, "index" : "not_analyzed" }
+                    }
+            }            
+        }
+    }
+}

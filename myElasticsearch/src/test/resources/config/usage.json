@@ -1,0 +1,41 @@
+{
+"usage":{
+    "_parent": {"type": "assets"},
+    "properties" : {
+        
+        "usage_id" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_invoice_no" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_general_placement" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_project_identifier_value" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_project_identifier_type" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_usage_territory" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_cont_part_usage" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_usage_division" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_external_sale_rights" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+
+	"c_external_sale_usage" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_requestor" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase" },
+        
+        "c_usage_business_unit" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "usage_id" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },                                               
+        
+        "c_page_no" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "title" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+        
+        "c_rel_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" },
+        
+        "c_request_date" : { "ignore_malformed": "false", "format": "dateOptionalTime", "type": "date" }                
+    }       
+            }
+}

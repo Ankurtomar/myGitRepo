@@ -1,0 +1,27 @@
+{
+    "index": {
+        "analysis": {
+            "analyzer": {
+                "basic_english": {
+                    "tokenizer": "standard",
+                    "filter": [
+                        "standard",
+                        "lowercase",
+                        "minimal_english_stemmer"
+                    ]
+                },
+                "string_lowercase" : {
+                    "type" : "custom",
+                    "tokenizer" : "keyword",
+                    "filter" : "lowercase"
+                }
+            },
+            "filter": {
+                "minimal_english_stemmer": {
+                    "type": "stemmer",
+                    "name": "minimal_english"
+                }
+            }
+        }
+    }
+}

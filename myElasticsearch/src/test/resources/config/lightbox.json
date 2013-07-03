@@ -1,0 +1,9 @@
+{
+"lightbox":{
+    "_parent": {"type": "assets"},
+    "properties" : {
+            "r_object_id" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  },
+            "c_lightbox_name" : { "type": "string", "index": "analyzed", "include_in_all": false, "analyzer": "string_lowercase"  }
+            }       
+        }
+}

@@ -11,29 +11,30 @@ public class myGoogleGuice {
 	 */
 	public static void main(String[] args) {
 		Injector injector = Guice.createInjector(new AppModuleMust());
-        for(int i=0;i<5;i++){
-        	injector.getInstance(Runnable.class);
-        }
+		for (int i = 0; i < 5; i++) {
+			//injector.getInstance(Runnable.class);
+			injector.getInstance(ImyThread.class);
+		}
 	}
 
 }
 
 interface ImyThread {
-	
+
 }
 
-class myThread implements ImyThread, Runnable{
+class myThread implements ImyThread, Runnable {
 
 	private ITask task;
 	private Thread t;
-	
+
 	@Inject
-	myThread(ITask task){
+	myThread(ITask task) {
 		this.task = task;
 		t = new Thread(this);
 		t.start();
 	}
-	
+
 	@Override
 	public void run() {
 		task.doTask();
